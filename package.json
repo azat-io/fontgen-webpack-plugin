@@ -1,0 +1,37 @@
+{
+  "name": "fontgen-webpack-plugin",
+  "version": "0.0.0",
+  "description": "Webpack generator of browser fonts",
+  "main": "index.js",
+  "repository": "git@github.com:azat-io/fontgen-webpack-plugin.git",
+  "author": "Azat S. <to@azat.io>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --ignore-path .gitignore",
+    "lint-staged": "lint-staged",
+    "test": "yarn run lint"
+  },
+  "engines": {
+    "node": ">= 0.12.0"
+  },
+  "pre-commit": "lint-staged",
+  "lint-staged": {
+    "*.js": "lint",
+    "*.md": "yaspeller-ci"
+  },
+  "dependencies": {
+    "fontfacegen": "^0.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^20.0.4",
+    "lint-staged": "^4.0.2",
+    "pre-commit": "^1.2.2",
+    "yaspeller-ci": "^0.6.0"
+  }
+}
